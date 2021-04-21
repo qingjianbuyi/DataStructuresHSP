@@ -62,7 +62,7 @@ public class SingleLinkedList {
         }
 
         HeroNode curr = head.getNext();
-        HeroNode next = null;
+        HeroNode next;
         HeroNode reverseHead = new HeroNode(-1);
         while (curr != null){
             next = curr.getNext();
@@ -245,7 +245,7 @@ public class SingleLinkedList {
     /**
      * 有效节点个数
      *
-     * @return
+     * @return count
      */
     public int size() {
         if (isEmpty()) {
